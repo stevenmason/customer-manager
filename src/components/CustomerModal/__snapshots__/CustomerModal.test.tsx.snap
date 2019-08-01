@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-bdVaJa eksIDc"
+>
+  <div
+    className="sc-htpNat jabHwM"
+    onClick={[Function]}
+  />
+  <div
+    className="sc-bwzfXH hXDBTd"
+  >
+    <div
+      className="sc-ifAKCX hcvhgT"
+    >
+      <h3>
+        Customer:
+      </h3>
+    </div>
+    <div
+      className="sc-bxivhb eIcZDB"
+    >
+      <div
+        className="sc-bZQynM cicyuq"
+        size="LARGE"
+      >
+        <label
+          className="sc-gzVnrw gBYcjp"
+        >
+          First Name
+        </label>
+        <input
+          className="sc-htoDjs iRTnix"
+          name="firstName"
+          onChange={[Function]}
+          value="Steven"
+        />
+      </div>
+      <div
+        className="sc-bZQynM cicyuq"
+        size="LARGE"
+      >
+        <label
+          className="sc-gzVnrw gBYcjp"
+        >
+          Last Name
+        </label>
+        <input
+          className="sc-htoDjs iRTnix"
+          name="lastName"
+          onChange={[Function]}
+          value="Mason"
+        />
+      </div>
+      <div
+        className="sc-bZQynM cicyuq"
+        size="LARGE"
+      >
+        <label
+          className="sc-gzVnrw gBYcjp"
+        >
+          Date of Birth
+        </label>
+        <input
+          className="sc-htoDjs iRTnix"
+          name="dateOfBirth"
+          onChange={[Function]}
+          type="date"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="sc-EHOje dSjNu"
+    >
+      <button
+        className="sc-dnqmqq keCVKD"
+        onClick={[Function]}
+      >
+        Cancel
+      </button>
+      <button
+        className="sc-dnqmqq keCVKD"
+        onClick={[Function]}
+      >
+        Save
+      </button>
+    </div>
+  </div>
+</div>
+`;

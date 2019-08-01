@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-bdVaJa fzbFad"
+>
+  <div
+    className="sc-htpNat zrlvf"
+    size="LARGE"
+  >
+    <label
+      className="sc-bxivhb ctASUB"
+    >
+      Filter
+    </label>
+    <input
+      className="sc-ifAKCX jOZwNh"
+      name="filter"
+      onChange={[Function]}
+      value=""
+    />
+  </div>
+  <button
+    className="sc-bwzfXH ppMEU"
+    onClick={[Function]}
+  >
+    Add Customer
+  </button>
+</div>
+`;

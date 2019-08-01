@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-bdVaJa bUbkJD"
+  size="LARGE"
+>
+  <label
+    className="sc-bwzfXH jNTJqm"
+  >
+    Input
+  </label>
+  <input
+    className="sc-htpNat BrrVI"
+    onChange={[Function]}
+  />
+</div>
+`;

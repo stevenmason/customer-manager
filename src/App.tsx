@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
 
-const App: React.FC = () => {
+import Header from "./components/Header";
+import Body from "./components/Body";
+import CustomerModal from "./components/CustomerModal";
+import { getCustomers } from "./api";
+import { Props } from "./types";
+
+const App: React.FC<Props> = ({
+  setCustomers,
+  setLoading,
+  editingCustomer
+}) => {
+  useEffect(() => {
+    async function fetchData() {
+      setCustomers(await getCustomers());
+      setLoading(false);
+    }
+    fetchData();
+    return () => {};
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Body />
+      {editingCustomer && <CustomerModal />}
     </div>
   );
-}
+};
 
 export default App;
