@@ -9,7 +9,7 @@ import { Props } from "./types";
 const App: React.FC<Props> = ({
   setCustomers,
   setLoading,
-  editingCustomer
+  editingCustomer,
 }) => {
   useEffect(() => {
     async function fetchData() {
@@ -18,7 +18,8 @@ const App: React.FC<Props> = ({
     }
     fetchData();
     return () => {};
-  }, []);
+  }, [setCustomers, setLoading]);
+
   return (
     <div>
       <Header />
